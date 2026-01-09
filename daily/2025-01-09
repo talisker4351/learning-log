@@ -1,0 +1,11 @@
+## 2025-01-09
+
+### Today
+I learned how to explore housing price data using Pandas DataFrames and the `describe()` function in Kaggle Learn.
+
+### Insight
+The `describe()` function shows the mean, standard deviation, and percentiles, which helps me understand the distribution of the data.
+We also discussed missing values, and since missing data appears in my work as well, it felt very relevant.
+
+### Next
+I will continue learning about machine learning.
