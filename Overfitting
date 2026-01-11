@@ -1,0 +1,92 @@
+# Overfitting in Machine Learning
+This note explains what **overfitting** is, why it is dangerous in real-world machine learning, and how to detect and prevent it.
+---
+## Conclusion
+Overfitting happens when a machine learning model learns **noise** instead of the **true patterns** in the data.
+A model that only memorizes past data cannot make reliable predictions for the future.
+---
+## Why Overfitting Is a Problem
+An overfitted model performs very well on training data,  
+but fails on **new, unseen data**.
+This makes it useless for real business decisions, where we always deal with future data.
+---
+## What Is Overfitting?
+Overfitting occurs when a model is **too complex for the amount of data**.
+Instead of learning general relationships,  
+the model memorizes individual training examples.
+---
+##  Example (Demand Forecasting)
+A demand forecasting model may perfectly match historical sales.  
+However, if it has learned random fluctuations instead of real demand patterns,  
+it will fail to predict future sales correctly.
+---
+## How to Detect Overfitting
+- Compare training and validation performance  
+- Use cross-validation  
+- Monitor error metrics such as RMSE  
+If training accuracy is high but validation accuracy is low, overfitting is likely happening.
+---
+##  How to Reduce Overfitting
+- Use simpler models  
+- Add regularization  
+- Increase training data  
+- Apply proper feature selection  
+---
+## Why It Matters for ML Engineers
+ML engineers must ensure that models **generalize well to new data**.
+Preventing overfitting is essential for building **trustworthy and usable prediction systems** in real businesses.
+---
+##  What I Learned
+High accuracy on training data does **not** mean a model is good.
+A truly good model is one that performs well on **unseen data**.
+---
+
+# 機械学習における過学習（Overfitting）
+このノートでは、**過学習**の意味と、なぜ実務で危険なのか、そしてどう防ぐかをまとめた。
+---
+## 結論
+過学習とは、機械学習モデルが  
+データの**本質的なパターン**ではなく、**ノイズ（偶然のばらつき）**を学習してしまうこと。
+過去を丸暗記したモデルは、未来を予測できない。
+---
+## なぜ問題なのか
+過学習したモデルは、学習データでは高精度だが、**新しいデータでは失敗する。**
+これは、実務での意思決定に使えないことを意味する。
+---
+##  過学習とは何か
+過学習は、データ量に対してモデルが**複雑すぎるとき**に起こる。
+モデルは一般的なルールを学ぶ代わりに、訓練データを**丸暗記**してしまう。
+---
+##  例（需要予測）
+需要予測モデルが過去の売上に完璧に合っていても、ランダムな変動まで学習していると、  将来の売上を正しく予測できない。
+---
+## 検出方法
+- 学習データと検証データの精度を比較する  
+- 交差検証を行う  
+- RMSEなどの誤差指標を確認する  
+学習精度だけが高い場合、過学習の可能性がある。
+
+-交差検証（Cross-Validation）とは、機械学習モデルの性能（汎化性能）をより正確に評価するため、
+ 手元のデータを複数に分割し、一部で学習、残りでテストを繰り返して平均的に評価する統計的手法。
+-誤差指標とは、予測値と実績値（正解値）のズレ（誤差）を数値化し、モデルの精度を評価するための指標
+---
+## 防ぐ方法
+- シンプルなモデルを使う  
+- 正則化を加える  
+- データを増やす  
+- 適切な特徴量選択を行う
+
+-主な正則化の手法
+ L1正則化（Lasso回帰）: パラメータの絶対値の合計（L1ノルム）を損失関数に加える。特徴量の選択（スパース化）効果があり、モデルをシンプルにする。
+ L2正則化（Ridge回帰）: パラメータの二乗和（L2ノルム）を損失関数に加える。パラメータ全体を小さくする効果があり、モデルの安定性を高める。
+ Elastic Net: L1とL2の組み合わせ。 
+
+---
+## 👨‍💻 MLエンジニアにとっての重要性
+MLエンジニアの仕事は、  
+**未来のデータにも通用するモデルを作ること**。
+過学習を防ぐことは、実務で信頼される予測モデルを作るために不可欠。
+---
+##  学んだこと
+学習データでの高精度は、モデルの本当の実力を保証しません。
+本当に良いモデルとは、**未知のデータでも高い精度を出せるモデル**
