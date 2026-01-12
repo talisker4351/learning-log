@@ -1,0 +1,73 @@
+# Why AI Hallucinates  
+## — The Chinese Room and Statistical AI
+
+### Overview  
+Modern AI such as Large Language Models (LLMs) can generate fluent and human-like text.  
+But this does not mean they understand what they say.  
+This gap between appearance and understanding causes hallucinations.
+
+### The Chinese Room  
+In the Chinese Room thought experiment, a person follows rules to manipulate Chinese symbols without understanding their meaning.  
+From the outside, it looks like real understanding, but it is not.
+
+LLMs work the same way.  
+They do not understand meaning — they only process symbols statistically.
+
+### What AI Actually Does  
+AI only calculates:
+
+> “What is the most likely next word?”
+
+It has no concept of:
+- Truth  
+- Reality  
+- Causality  
+
+### Why Hallucinations Occur  
+When important information is missing, AI fills the gap with the most statistically likely text.  
+This can sound correct but be factually wrong.  
+That is a hallucination.
+
+### Conclusion  
+AI does not understand the world.  
+It only extends patterns from past data.
+
+> **AI outputs are hypotheses.  
+Humans must make the final decisions.**
+
+---
+
+# なぜAIはハルシネーションを起こすのか  
+## ― 中国語の部屋と統計的AI
+
+### 概要  
+LLMのようなAIは人間のように自然な文章を生成できますが、  
+それは「理解」していることを意味しません。  
+このズレがハルシネーションの原因です。
+
+### 中国語の部屋  
+中国語を理解しない人が、ルールに従って記号を操作すると、  
+外からは理解しているように見えます。  
+しかし意味は分かっていません。
+
+AIも同じで、言葉の意味ではなく統計的なパターンを処理しています。
+
+### AIがしていること  
+AIがしているのは：
+
+> 「次に来る確率が一番高い単語は何か？」
+
+を計算しているだけです。  
+真実や現実を理解しているわけではありません。
+
+### なぜ間違えるのか  
+重要な情報が入力にないと、  
+AIは統計的にもっともらしい文章で空白を埋めます。  
+これがハルシネーションです。
+
+### 結論  
+AIは世界を理解していません。  
+過去のパターンをつなげているだけです。
+
+> **AIの出力は仮説であり、  
+最終判断は人間が行う必要があります。**
